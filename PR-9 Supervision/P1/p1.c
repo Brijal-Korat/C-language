@@ -18,6 +18,13 @@ int main() {
 
     evenFp = fopen("evenNumbers.txt", "w");
     oddFp = fopen("oddNumbers.txt", "w");
+    
+    int n1,n2;
+    
+    printf("Enter first number :- ");
+    scanf("%d",&n1);
+    printf("Enter second number :- ");
+    scanf("%d",&n2);
 
     if (evenFp!='\0' || oddFp!='\0') 
 	{
@@ -26,19 +33,19 @@ int main() {
         fprintf(evenFp, "Even Numbers are :- \n");
     	fprintf(oddFp, "Odd Numbers are :- \n");
     	
-	    for (i = 50; i <= 70; i++) 
+	    for (i = n1; i <= n2; i++) 
 		{
 	        if (i % 2 == 0) 
 			{
 	            fprintf(evenFp, "%d", i);
-	            if (i != 70){
+	            if (i != n2){
 	            	fprintf(evenFp, ", ");
 				}
 	        }
 			else 
 			{
 	            fprintf(oddFp, "%d", i);
-	            if (i != 69){
+	            if (i != n2-1){
 	            	fprintf(oddFp, ", ");
 				}
 	        }
