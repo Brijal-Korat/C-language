@@ -2,6 +2,10 @@
 
 #include<stdio.h>
 
+int cube(int ptr){
+	return ptr * ptr * ptr;	
+}
+
 main(){
 	int r,c;
 	
@@ -40,7 +44,7 @@ main(){
 	
 	for(i=0 ; i<r ; i++){
 		for(j=0 ; j<c ; j++){
-			printf("%d  ",(*ptr[i][j]) * (*ptr[i][j]) * (*ptr[i][j]));
+			printf("%d  ",cube(*ptr[i][j]));
 		}
 		printf("\n");
 	}
