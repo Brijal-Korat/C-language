@@ -57,10 +57,5 @@ int main() {
     else{
     	printf("File doesn't open..!");
 	}
-
-    
-
-    
-
 }
 
